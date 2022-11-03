@@ -46,7 +46,7 @@ class _MyAppState extends State<MyApp> {
     if (globalPhoneType == PhoneNumberType.mobile) {
       if (globalPhoneFormat == PhoneNumberFormat.international) {
         newPlaceholder =
-            currentSelectedCountry.exampleNumberMobileInternational;
+            currentSelectedCountry.exampleNumberMobileInternational.first;
       } else {
         newPlaceholder = currentSelectedCountry.exampleNumberMobileNational;
       }
