@@ -74,8 +74,9 @@ class FlutterLibphonenumber {
             v['exampleNumberFixedLineNational'] ?? '',
         phoneMaskMobileNational: v['phoneMaskMobileNational'] ?? '',
         phoneMaskFixedLineNational: v['phoneMaskFixedLineNational'] ?? '',
-        exampleNumberMobileInternational:
-            v['exampleNumberMobileInternational'] ?? '',
+        exampleNumberMobileInternational: k == 'EE'
+            ? [v['exampleNumberMobileInternational'] ?? '', '+372 512 3456']
+            : [v['exampleNumberMobileInternational'] ?? ''],
         exampleNumberFixedLineInternational:
             v['exampleNumberFixedLineInternational'] ?? '',
         phoneMaskMobileInternational: v['phoneMaskMobileInternational'] ?? '',

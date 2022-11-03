@@ -63,7 +63,7 @@ class CountryWithPhoneCode {
         exampleNumberFixedLineNational = '0121 234 5678',
         phoneMaskMobileNational = '+00 00000 000000',
         phoneMaskFixedLineNational = '+00 0000 000 0000',
-        exampleNumberMobileInternational = '+44 7400 123456',
+        exampleNumberMobileInternational = const ['+44 7400 123456'],
         exampleNumberFixedLineInternational = '+44 121 234 5678',
         phoneMaskMobileInternational = '+00 0000 000000',
         phoneMaskFixedLineInternational = '+00 000 000 0000',
@@ -77,7 +77,7 @@ class CountryWithPhoneCode {
         exampleNumberFixedLineNational = '(201) 555-0123',
         phoneMaskMobileNational = '(000) 000-0000',
         phoneMaskFixedLineNational = '(000) 000-0000',
-        exampleNumberMobileInternational = '+1 201-555-0123',
+        exampleNumberMobileInternational = const ['+1 201-555-0123'],
         exampleNumberFixedLineInternational = '+1 201-555-0123',
         phoneMaskMobileInternational = '+0 000-000-0000',
         phoneMaskFixedLineInternational = '+0 000-000-0000',
@@ -123,7 +123,7 @@ class CountryWithPhoneCode {
   /// ```
   /// +44 7400 123456
   /// ```
-  final String exampleNumberMobileInternational;
+  final List<String> exampleNumberMobileInternational;
 
   /// Example fixed line number in international format.
   /// ```
